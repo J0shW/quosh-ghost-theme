@@ -37,6 +37,23 @@ into the {body} of the default.hbs template --}}
     {{#if @labs.members}}
       <a href="{{@site.url}}/newsletter" class="m-button filled">{{t "Subscribe"}}</a>
     {{/if}}
+
+    {{#get "authors" limit="5" as |writers|}}
+      {{#if writers}}
+        <div style="display: flex; justify-content: space-evenly;">
+          {{#foreach writers}}
+            <a href="{{url}}" style="position: unset;" class="m-article-card__author js-tooltip" aria-label={{name}} data-tippy-content={{name}}>
+                {{#if profile_image}}
+                  <div style="background-image: url({{img_url profile_image size="xs"}});"></div>
+                {{else}}
+                  <div style="background-image: url({{asset "images/default-avatar-square-small.jpg"}});"></div>
+                {{/if}}
+            </a>
+          {{/foreach}}
+        </div>
+      {{/if}}
+    {{/get}}
+
   </div>
   </section>
   <div class="l-content">
