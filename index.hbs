@@ -33,14 +33,14 @@ into the {body} of the default.hbs template --}}
     {{#if @site.description}}
       <p class="m-hero-description bigger">{{@site.description}}</p>
     {{/if}}
-    {{#if @labs.subscribers}}
+    {{!-- {{#if @labs.subscribers}}
       <a href="{{@site.url}}/subscribe" class="m-button filled">{{t "Subscribe"}}</a>
-    {{/if}}
-    {{#if @labs.members}}
+    {{/if}} --}}
+    {{!-- {{#if @labs.members}}
       <a href="{{@site.url}}/newsletter" class="m-button filled">{{t "Subscribe"}}</a>
-    {{/if}}
+    {{/if}} --}}
 
-    {{#get "authors" limit="5" as |writers|}}
+    {{!-- {{#get "authors" limit="5" as |writers|}}
       {{#if writers}}
         <div style="display: flex; justify-content: space-evenly;">
           {{#foreach writers}}
@@ -54,7 +54,7 @@ into the {body} of the default.hbs template --}}
           {{/foreach}}
         </div>
       {{/if}}
-    {{/get}}
+    {{/get}} --}}
 
   </div>
   </section>
