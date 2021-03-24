@@ -9,3 +9,11 @@
 .m-article-card__info{
     background-color: var(--secondary-subtle-color);
 }
+
+.l-post-content hr:after {
+    background-color: #9b9b9b;
+}
+
+.l-post-content hr {
+    border-top: 1px solid #9b9b9b;
+}
