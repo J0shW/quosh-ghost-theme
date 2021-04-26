@@ -10,7 +10,7 @@ This footer template is shared across all the pages.
       </nav>
     {{/if}}
     <nav class="m-footer-social">
-      {{#if @site.facebook}}
+      {{!-- {{#if @site.facebook}}
         <a href="{{facebook_url @site.facebook}}" target="_blank" rel="noopener" aria-label="Facebook">
           <span class="icon-facebook" aria-hidden="true"></span>
         </a>
@@ -19,10 +19,13 @@ This footer template is shared across all the pages.
         <a href="{{twitter_url @site.twitter}}" target="_blank" rel="noopener" aria-label="Twitter">
           <span class="icon-twitter" aria-hidden="true"></span>
         </a>
-      {{/if}}
-      <a href="{{@site.url}}/rss" aria-label="RSS">
-        <span class="icon-rss" aria-hidden="true"></span>
+      {{/if}} --}}
+      <a href="https://www.instagram.com/quinnandjosh/" target="_blank" aria-label="Instagram">
+        <span class="icon-instagram" aria-hidden="true"></span>
       </a>
+      {{!-- <a href="https://www.instagram.com/quinnandjosh/" aria-label="Instagram">
+        <span class="icon-pinterest" aria-hidden="true"></span>
+      </a> --}}
     </nav>
     <p class="m-footer-copyright">
       <span>{{@site.title}} &copy; {{date format="YYYY"}}</span>

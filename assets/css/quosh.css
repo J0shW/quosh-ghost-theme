@@ -17,3 +17,28 @@
 .l-post-content hr {
     border-top: 1px solid #9b9b9b;
 }
+
+.m-hero {
+    padding: 0.5rem 5vw;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.m-hero-title { 
+    display: none;
+}
+
+#ghost-portal-root {
+    display: none;
+}
+.l-post-content blockquote.note {
+    border-left: 2px solid black;
+    padding-left: 20px;
+}
+.l-post-content blockquote.note:before {
+    display: none;
+}
+
+.m-footer__content {
+    padding: 30px 0px;
+}
